@@ -1,7 +1,7 @@
 DEPS:= resume.cls fontawesome5/fontawesome5.sty
 SRCS:= resume-zh.tex resume-en.tex
 PDFS:= $(SRCS:%.tex=%.pdf)
-PDFCAT:= cv.pdf
+PDFCAT:= zh+en.pdf
 
 DATE= $(shell date +%Y%m%d)
 DISTDIR= resume.$(DATE)
@@ -15,6 +15,8 @@ $(PDFCAT): $(PDFS)
 		-sDEVICE=pdfwrite \
 		-sOutputFile=$@ \
 		$(PDFS)
+	mv resume-zh.pdf zh.pdf
+	mv resume-en.pdf en.pdf
 
 %.pdf: %.tex $(DEPS)
 	latexmk -xelatex $<
