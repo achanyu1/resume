@@ -446,10 +446,10 @@
 %   {<major>}       % #5
 \NewDocumentCommand{\study}{m o m m m}{
   \ifdef{\@zh}{%
-    #1 & \textbf{#3} #4 \\*
+    #1 & \textbf{#3} \texttt{(#4)} \\*
     \IfValueTF{#2}{#2}{现在} & #5 \\
   }{%
-    #1 & \textbf{#3} (#4) \\*
+    #1 & \textbf{#3} \texttt{(#4)} \\*
     \IfValueTF{#2}{#2}{present} & #5 \\
   }
 }
