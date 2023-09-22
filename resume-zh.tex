@@ -1,11 +1,7 @@
 %%
-%% Copyright (c) 2018-2019 Weitian LI <wt@liwt.net>
+%% Copyright (c) 2018-2023 Weitian LI
 %% CC BY 4.0 License
 %%
-%% Created: 2018-04-11
-%%
-
-% !TEX program = xelatex
 
 % Chinese version
 \documentclass[zh]{resume}
@@ -15,15 +11,15 @@
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2023, Yipeng Liu \hspace{0.5em}
+  \faCopyright{} 2023, 余 有信 \hspace{0.5em}
   \creativecommons{by}{4.0} \hspace{0.5em}
-  \githublink{lwpie}{resume} \hspace{0.5em}
-  \faEdit{} \today
+  \githublink{achanyu1}{resume} \hspace{0.5em}
+  %\faEdit{} \today
 }
 
-\name{一芃}{刘}
+\name{有信}{余}
 
-\keywords{Linux, Python, C, Shell, DevOps, SysAdmin}
+\keywords{关键词1, 关键词2, ...}
 
 % \tagline{\icon{\faBinoculars}} <position-to-look-for>}
 % \tagline{<current-position>}
@@ -31,13 +27,14 @@
 % \photo{<height>}{<filename>}
 
 \profile{
-  \mobile{15::24652}
-  \email{liu@yipe.ng}
-  \github{lwpie} \\
-  \university{清华大学 \textbullet 交叉信息研究院}
-  % \degree{博士在读}
-  \birthday{2002-04}
-  \home{上海}
+  \mobile{184-0292-1231}
+  \email{yvoium@outlook.com}
+  \home{呼和浩特}\\
+  \github{achanyu1} 
+  \university{内蒙古农业大学 \textbullet 计算机科学与技术系}
+  % \degree{计算机科学与技术 \textbullet 硕士}
+  \birthday{1999-04}
+  % \address{呼和浩特}
   % Custom information:
   % \icontext{<icon>}{<text>}
   % \iconlink{<icon>}{<link>}{<text>}
@@ -49,138 +46,71 @@
 %======================================================================
 % Summary & Objectives
 %======================================================================
-{\onehalfspacing\vspace{0.5em}\hspace{2em}%
-交叉信息研究院博士一年级在读，
-计算机科学与技术系本科优秀毕业生，
-现任学生网络与开源软件协会(\link{https://tuna.moe}{\texttt{TUNA}})会长。
-热爱计算机专业，熟悉 \texttt{C++,Python} 等编程语言与 \texttt{GNU/Linux} 的使用，具有一定英文基础。
-完成多个挑战性课程项目并参与校级项目，在软硬件领域、工程与科研方向均进行了探索与尝试，
-取得全国特等奖在内的多项荣誉，并曾入围系综合奖学金答辩。
-实践开源精神，参与开源社区活动并积极开放源代码；
-加入答疑坊等志愿组织，累计志愿服务时长超五百小时。
-公路骑行与游泳爱好者，现役交叉信息研究院泳队。
+{\onehalfspacing\hspace{2em}%
+善于与不同的同学建立良好关系，
+在研究生会担任部长，具备领导能力和组织协调能力，
+热衷计算机和网络技术，
+有 10 年的 Windows 使用经验，熟练掌握chatGPT
+
 \par}
 
 %======================================================================
 \sectionTitle{技能和语言}{\faWrench}
 %======================================================================
 \begin{competences}
-  \separator{0.1em}
-
+  \comptence{操作系统}{%
+    \icon{\faWindows} Windows （10 年）
+  }
   \comptence{编程}{%
-    \texttt{C/C++,Python,Rust}
+    Python, C
   }
-  \comptence{}{%
-    \texttt{SQL,Shell,Web}
+  \comptence{工具}{%
+    Git
   }
-
-  \comptence{\icon{\faLanguage} 英语}{%
-    上海英语高考137分
+  \comptence{数据分析}{%
+    Pandas; Matplotlib; Keras, Scikit-learn
   }
-  \comptence{}{%
-    大学英语四级考试647分 / 六级考试623分
+  \comptence{\icon{\faLanguage} 英语}{
+   大学英语六级考试 526 分
   }
 \end{competences}
-
-%======================================================================
-\sectionTitle{科研经历}{\faGraduationCap}
-%======================================================================
-\begin{educations}
-  \separator{0.2em}
-
-  \education%
-    {2021.06}%
-    [现在]%
-    {交叉信息研究院}%
-    {张焕晨}%
-    {数据库}%
-    {云数据仓库存储格式与自动聚合}
-
-  \separator{0.5em}
-  \education%
-    {2020.02}%
-    [2020.10]%
-    {计算机科学与技术系}%
-    {刘知远}%
-    {自然语言处理}%
-    {疫情谣言传播结构分析}
-\end{educations}
 
 %======================================================================
 \sectionTitle{主要项目与荣誉}{\faBriefcase}
 %======================================================================
 \begin{awards}
-  \separator{0.2em}
+    \award
+      {2023.08}
+      {第九届中国国际“互联网＋”大学生创新创业大赛}
+      {内蒙古赛区银奖}
+      
+    \separator{0.5ex}
+    
+    \study
+      {2023.09}  % #1
+      [2022.09]    % #2
+      {计算机与信息工程学院研究生会}      % #3
+      {学术部}  % #4
+      {部长}       % #5
+    \separator{0.5ex}
 
-  \award%
-    {2022.06}%
-    {计算机系优秀毕业生}%
-    {酒井之星}
-  \separator{0.5em}
 
-  \study%
-    {2021.08}%
-    [2021.04]%
-    {全国大学生计算机系统能力培养大赛}%
-    {C++,ARM}%
-    {编译系统设计赛特等奖，并获华为毕昇杯}
-  \separator{0.5em}
-
-  \study%
-    {2021.05}%
-    [2020.10]%
-    {NaiveDB++}%
-    {C++,SQL}%
-    {支持持久化序列存储、索引加速、JOIN操作、MVCC与WAL故障恢复的数据库框架}
-  \separator{0.5em}
-
-  \award%
-    {2020.10}%
-    {计算机系单项奖学金}%
-    {学业进步、社会工作、科技创新、志愿公益}
-  \separator{0.5em}
-
-  \study%
-    {2021.01}%
-    [2020.09]%
-    {Untitled Router}%
-    {Verilog,RISC-V,C}%
-    {在 FPGA 上实现五级流水线 RISC-V 处理器，并基于此实现支持 RIPv2 协议的硬件转发引擎}
-  \separator{0.5em}
-
-  \study%
-    {2020.04}%
-    [2020.03]%
-    {109周年校庆云合影}%
-    {Flask,Vue}%
-    {访问量达百余万，收到多封知名校友感谢信}
-  \separator{0.5em}
-
-  \study%
-    {2019.12}%
-    [2019.10]%
-    {清华大学第二十一届电子设计大赛}%
-    {STM32,C}%
-    {基于传感器的智能车对战积分赛，商汤特等奖}
-  \separator{0.5em}
-
-  \award%
-    {2019.04}%
-    {清华大学第三十七届挑战杯}%
-    {交叉学科二等奖、发明专利一项}
-  \separator{0.5em}
-  
-  \award%
-    {2017.05}%
-    {国际数学建模挑战赛}%
-    {大中华区特等奖 Outstanding Winner}
-  \separator{0.5em}
-
-  \award%
-    {2016.04}%
-    {美国大学生数学建模竞赛}%
-    {一等奖 Meritorious Winner}
-
+  \separator{0.5ex}
 \end{awards}
+
+%======================================================================
+\sectionTitle{科研经历}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {2022.09}%
+    [现在]%
+    {内蒙古农业大学}%
+    {王步钰}%
+    {深度学习}%
+    {声音识别}
+
+  \separator{0.5ex}
+\end{educations}
 
 \end{document}

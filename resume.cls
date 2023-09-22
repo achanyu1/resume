@@ -417,44 +417,6 @@
 }
 
 %%
-%% Section: awards
-%%
-
-\NewDocumentEnvironment{awards}{}{%
-  \begin{tabular}{R{\leftcolwidth} | L{\rightcolwidth}}
-}{%
-  \end{tabular}
-}
-
-% \award
-%   {<date>}   % #1
-%   {<name>}   % #2
-%   {<award>}  % #3
-\NewDocumentCommand{\award}{m m m}{
-  \ifdef{\@zh}{%
-    #1 & \textbf{#2} \textbullet #3 \\
-  }{%
-    #1 & \textbf{#2} #3 \\
-  }
-}
-
-% \study
-%   {<start-date>}  % #1
-%   [<end-date>]    % #2
-%   {<school>}      % #3
-%   {<department>}  % #4
-%   {<major>}       % #5
-\NewDocumentCommand{\study}{m o m m m}{
-  \ifdef{\@zh}{%
-    #1 & \textbf{#3} \texttt{(#4)} \\*
-    \IfValueTF{#2}{#2}{现在} & #5 \\
-  }{%
-    #1 & \textbf{#3} \texttt{(#4)} \\*
-    \IfValueTF{#2}{#2}{present} & #5 \\
-  }
-}
-
-%%
 %% Section: projects
 %%
 
@@ -549,7 +511,43 @@
       }
     } \enspace \\
 }
+%%
+%% Section: awards
+%%
 
+\NewDocumentEnvironment{awards}{}{%
+  \begin{tabular}{R{\leftcolwidth} | L{\rightcolwidth}}
+}{%
+  \end{tabular}
+}
+
+% \award
+%   {<date>}   % #1
+%   {<name>}   % #2
+%   {<award>}  % #3
+\NewDocumentCommand{\award}{m m m}{
+  \ifdef{\@zh}{%
+    #1 & \textbf{#2} \textbullet #3 \\
+  }{%
+    #1 & \textbf{#2} #3 \\
+  }
+}
+
+% \study
+%   {<start-date>}  % #1
+%   [<end-date>]    % #2
+%   {<school>}      % #3
+%   {<department>}  % #4
+%   {<major>}       % #5
+\NewDocumentCommand{\study}{m o m m m}{
+  \ifdef{\@zh}{%
+    #1 & \textbf{#3} \texttt{(#4)} \\*
+    \IfValueTF{#2}{#2}{现在} & #5 \\
+  }{%
+    #1 & \textbf{#3} \texttt{(#4)} \\*
+    \IfValueTF{#2}{#2}{present} & #5 \\
+  }
+}
 %%
 %% Section: referees
 %%

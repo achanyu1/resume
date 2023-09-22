@@ -1,6 +1,8 @@
 My Resume and LaTeX Template
 ============================
 
+Home: [https://github.com/liweitianux/resume](https://github.com/liweitianux/resume)
+
 Introduction
 ------------
 This repository holds my [resume](resume-zh+en.pdf) (Chinese and English),
@@ -11,10 +13,6 @@ This template is based on the
 by Christophe Roger, which is further based on the
 [Plasmati Graduate CV](https://www.latextemplates.com/template/plasmati-graduate-cv)
 by Alessandro Plasmati.
-
-This template is also available on
-[Overleaf](https://www.overleaf.com/latex/templates/simple-resume-template-for-new-graduate-ying-jie-sheng-jian-li-mo-ban/hxrntvmmvnqt).
-Welcome to try it and report back.
 
 Usage
 -----
